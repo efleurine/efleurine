@@ -3,19 +3,36 @@
 	"description": "Gatsby hello world starter",
 	"license": "MIT",
 	"scripts": {
-		"develop": "gatsby develop",
+		"develop": "gatsby develop -o -H 0.0.0.0",
 		"build": "gatsby build",
-		"serve": "gatsby serve"
+		"serve": "gatsby serve",
+		"lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore"
 	},
 	"dependencies": {
 		"babel-plugin-tailwind-components": "^0.5.4",
 		"emotion": "^9.2.6",
 		"emotion-server": "^9.2.6",
-		"gatsby": "next",
+		"gatsby": "2.0.0-rc.9",
 		"gatsby-plugin-emotion": "next",
 		"react": "^16.4.2",
 		"react-dom": "^16.4.2",
 		"react-emotion": "^9.2.6",
 		"tailwindcss": "^0.6.5"
+	},
+	"devDependencies": {
+		"babel-eslint": "^9.0.0",
+		"babel-plugin-dynamic-import-webpack": "^1.0.2",
+		"babel-plugin-syntax-dynamic-import": "^6.18.0",
+		"eslint": "^5.5.0",
+		"eslint-config-google": "^0.10.0",
+		"eslint-config-prettier": "^3.0.1",
+		"eslint-plugin-graphql": "^2.1.1",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-jsx-a11y": "^6.1.1",
+		"eslint-plugin-prettier": "^2.6.2",
+		"eslint-plugin-react": "^7.11.1",
+		"prettier": "^1.14.2",
+		"webpack-bundle-analyzer": "^2.13.1"
 	}
 }

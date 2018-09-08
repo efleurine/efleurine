@@ -62,3 +62,7 @@ typings/
 .cache/
 public
 yarn-error.log
+
+# editors
+.idea/
+.vscode
